@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Products</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="Header">
+
+            <div class="header-left">
+                <img class="icon" src="images/Electronics.png" alt="Electronics logo">
+                <h2>Electronic Devices</h2>
+            </div>
+
+            <div class="header-center">
+                <input id="searchInput" class="s-bar" type="search" placeholder="Search..." name="Search">
+                <button class="s-btn" onclick="searchProduct()"> Search
+            </div>
+
+            <nav class="nav-text">
+                <a href="index.html">Home Page</a>
+                <a href="About.html">About</a>
+                <a href="Help.html">Help</a>
+                <a href="Contact.html">Contact us</a>
+                <a href="Categories.html">Products</a>
+                <a href="cart.html">Cart🛒</a> 
+               <a href="login.html"><button class="login-btn">Login</button></a>
+                
+            </nav>
+
+        </div>
+    </header>
+
+    <h1 style="text-align:center; margin-top:30px;">Our Products</h1>
+
+    <section class="Categories">
+
+        <!-- Mobiles -->
+
+       <div class="card" data-category="mobile">
+            <img class="img" src="images/mobile(1).jfif" alt="Motorola Mobile">
+            <div class="card-content">
+                <h3>Motorola Edge</h3>
+                <p>128GB Storage | 48MP Camera</p>
+                <p>Price: Rs. 80,000</p>
+                <p>⭐⭐⭐</p>
+                <button class="button" onclick="addToCart('Motorola Edge',80000)">🛒 Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card" data-category="mobile">
+            <img class="img" src="images/mobile(2).jfif" alt="iPhone">
+            <div class="card-content">
+                <h3>iPhone 15</h3>
+                <p>256GB Storage | 48MP Camera</p>
+                <p>Price: Rs. 120,000</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <button class="button" onclick="addToCart('iPhone 15',120000)">🛒 Add to Cart
+                </button>
+            </div>
+        </div>
+
+       <div class="card" data-category="mobile">
+            <img class="img" src="images/mobile(3).jfif" alt="Samsung Mobile">
+            <div class="card-content">
+                <h3>Samsung Galaxy</h3>
+                <p>130GB Storage | 54MP Camera</p>
+                <p>Price: Rs. 100,000</p>
+                <p>⭐⭐⭐⭐</p>
+                <button class="button" onclick="addToCart('Samsung Galaxy',100000)">🛒 Add to Cart
+</button>
+            </div>
+        </div>
+
+        <!-- Laptops -->
+
+        <div class="card" data-category="laptop">
+            <img class="img" src="images/lapotp(1).jfif" alt="Laptop">
+            <div class="card-content">
+                <h3>HP Pavilion Laptop</h3>
+                <p>Intel Core i5 | 8GB RAM | 512GB SSD</p>
+                <p>Price: Rs. 100,000</p>
+                <p>⭐⭐⭐⭐</p>    
+        <button class="button" onclick="addToCart('HP Pavilion Laptop',100000)">🛒 Add to Cart
+</button>
+            </div>
+        </div>
+
+        <div class="card" data-category="laptop">
+            <img class="img" src="images/laptop(2).jfif" alt="Laptop">
+            <div class="card-content">
+                <h3>HP Victus Gaming Laptop</h3>
+                <p>Intel Core i7 | 16GB RAM | 1TB SSD</p>
+                <p>Price: Rs. 250,000</p>
+                <p>⭐⭐⭐⭐</p>
+                 <button class="button" onclick="addToCart('HP Victus Gaming Laptop',250000)">🛒 Add to Cart
+            
+</button>
+            </div>
+        </div>
+
+        <div class="card" data-category="laptop">
+            <img class="img" src="images/laptop(3).jfif" alt="Laptop">
+            <div class="card-content">
+                <h3>Dell Inspiron 15</h3>
+                <p>Intel Core i7 | 16GB RAM | 512GB SSD</p>
+                <p>Price: Rs. 130,000</p>
+                <p>⭐⭐⭐⭐</p>
+                <button class="button" onclick="addToCart('Dell Inspiron 15',130000)">🛒 Add to Cart
+   
+</button>
+            </div>
+        </div>
+
+        <!-- Watches -->
+
+       <div class="card" data-category="watch">
+            <img class="img" src="images/watch(1).jfif" alt="Watch">
+            <div class="card-content">
+                <h3>Xiaomi Watch S4</h3>
+                <p>GPS | AMOLED Display | 15-Day Battery</p>
+                <p>Price: Rs. 45,000</p>
+                <p>⭐⭐⭐⭐</p>
+                <button class="button" onclick="addToCart('Xiaomi Watch S4',45000)">🛒 Add to Cart
+            
+</button>
+            </div>
+        </div>
+
+        <div class="card" data-category="watch">
+            <img class="img" src="images/watch(2).jfif" alt="Watch">
+            <div class="card-content">
+                <h3>Apple Watch Series 10</h3>
+                <p>GPS | Heart Rate Monitor</p>
+                <p>Price: Rs. 150,000</p>
+                <p>⭐⭐⭐⭐</p>
+                
+            <button class="button" onclick="addToCart('Apple Watch Series 10',150000)">🛒 Add to Cart
+</button>
+            </div>
+        </div>
+
+        <div class="card" data-category="watch">
+            <img class="img" src="images/watch(3).jfif" alt="Watch">
+            <div class="card-content">
+                <h3>Noise ColorFit Pro 6</h3>
+                <p>Bluetooth Calling | SpO2 Monitor</p>
+                <p>Price: Rs. 18,000</p>
+                <p>⭐⭐⭐⭐</p>
+                <button class="button" onclick="addToCart('Noise ColorFit Pro 6',18000)">🛒 Add to Cart
+</button>
+            
+
+            </div>
+        </div>
+
+        <!-- Headphones -->
+
+        <div class="card" data-category="headphone">
+            <img class="img" src="images/headphone(1).jfif" alt="Headphones">
+            <div class="card-content">
+                <h3>JBL Tune 770NC</h3>
+                <p>Wireless | Noise Cancelling</p>
+                <p>Price: Rs. 35,000</p>
+                <p>⭐⭐⭐⭐</p>
+            <button class="button" onclick="addToCart('JBL Tune 770NC',35000)">🛒 Add to Cart
+</button>
+
+            </div>
+        </div>
+
+        <div class="card" data-category="headphone">
+            <img class="img" src="images/headphones(2).jfif" alt="Headphones">
+            <div class="card-content">
+                <h3>Beats Studio Pro</h3>
+                <p>Wireless | ANC | 40-Hour Battery</p>
+                <p>Price: Rs. 95,000</p>
+                <p>⭐⭐⭐⭐</p>
+        <button class="button" onclick="addToCart('Beats Studio Pro',95000)">🛒 Add to Cart
+</button>
+
+            </div>
+        </div>
+
+        <div class="card" data-category="headphone">
+            <img class="img" src="images/headphone(3).jfif" alt="Headphones">
+            <div class="card-content">
+                <h3>Apple AirPods Max</h3>
+                <p>Spatial Audio | Active Noise Cancellation</p>
+                <p>Price: Rs. 165,000</p>
+                <p>⭐⭐⭐⭐</p>
+               <button class="button" onclick="addToCart('Apple AirPods Max',165000)">🛒 Add to Cart
+</button>
+
+            </div>
+        </div>
+
+        <!-- Cameras -->
+
+        <div class="card" data-category="camera">
+            <img class="img" src="images/Camera(1).jfif" alt="Camera">
+            <div class="card-content">
+                <h3>Canon EOS R50</h3>
+                <p>24.2MP | 4K Video</p>
+                <p>Price: Rs. 250,000</p>
+                <p>⭐⭐⭐⭐</p>
+                <button class="button" onclick="addToCart('Canon EOS R50',250000)">🛒 Add to Cart
+</button>
+
+            </div>
+        </div>
+
+       <div class="card" data-category="camera">
+            <img class="img" src="images/camera(2).jfif" alt="Camera">
+            <div class="card-content">
+                <h3>Nikon Z50 II</h3>
+                <p>20.9MP | 4K Video</p>
+                <p>Price: Rs. 280,000</p>
+                <p>⭐⭐⭐⭐</p>
+              <button class="button" onclick="addToCart('Nikon Z50 II',280000)">🛒 Add to Cart
+</button>
+
+            </div>
+        </div>
+
+      <div class="card" data-category="camera">
+            <img class="img" src="images/camera(3).jfif" alt="Camera">
+            <div class="card-content">
+                <h3>Canon EOS 250D</h3>
+                <p>24.1MP | Full HD Video</p>
+                <p>Price: Rs. 180,000</p>
+                <p>⭐⭐⭐⭐</p>
+                <button class="button" onclick="addToCart('Canon EOS 250D',180000)">🛒 Add to Cart
+</button>
+
+            </div>
+        </div>
+
+        <!-- Gaming PCs -->
+
+        <div class="card" data-category="gaming">
+            <img class="img" src="images/gaming(1).jfif" alt="Gaming PC">
+            <div class="card-content">
+                <h3>Acer Predator Orion 3000</h3>
+                <p>Intel Core i7 | RTX 4070</p>
+                <p>Price: Rs. 400,000</p>
+                <p>⭐⭐⭐⭐</p>
+               <button class="button" onclick="addToCart('Acer Predator Orion 3000',400000)">🛒 Add to Cart
+</button>
+           </div>
+        </div>
+
+        <div class="card" data-category="gaming">
+            <img class="img" src="images/Gaming(2).avif" alt="Gaming PC">
+            <div class="card-content">
+                <h3>CyberPowerPC Gamer Supreme</h3>
+                <p>AMD Ryzen 9 | RTX 4070 Ti</p>
+                <p>Price: Rs. 550,000</p>
+                <p>⭐⭐⭐⭐</p>
+                <button class="button" onclick="addToCart('CyberPowerPC Gamer Supreme',550000)">🛒 Add to Cart
+</button>
+            </div>
+        </div>
+
+        <div class="card" data-category="gaming">
+            <img class="img" src="images/gaming(3).jpg" alt="Gaming PC">
+            <div class="card-content">
+                <h3>Alienware Aurora R16</h3>
+                <p>Intel Core i9 | RTX 4080 | 32GB RAM</p>
+                <p>Price: Rs. 600,000</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <button class="button" onclick="addToCart('Alienware Aurora R16',600000)">🛒 Add to Cart
+</button>
+            </div>
+        </div>
+
+    </section>
+
+   
+
+    <br>
+
+    <a href="index.html">
+        <button class="hero-btn">Back to Main</button>
+    </a>
+<script src="script.js"></script>
+</body>
+</html>
+
